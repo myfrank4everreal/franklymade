@@ -35,16 +35,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="{% url 'about_blog' %}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-link" href="{% url 'portinfo' %}">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
         <li class="nav-item">
-          <a class="nav-link" href="tutorials.html">Tutorials</a>
+          <a class="nav-link" href="#">Tutorials</a>
         </li>
 
           
@@ -73,9 +73,9 @@
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="#">Home</a>
+        <a href="#">Home</a>/ 
       </li>
-      <li class="breadcrumb-item active">Latest Tech News/li>
+     <a href="{% url 'index'%}"> <li class="breadcrumb-item active">Latest Tech News</li></a>
     </ol>
 
     <div class="row row-controler">
@@ -260,7 +260,7 @@
                   you just need to configure them properly to match your site.
                   <br>
 
-                  <a href="#"><button type="button" class="btn btn-primary mt-5 mb-5" >start learning</button></a>
+                  <a href="{% url 'django_intro' %}"><button type="button" class="btn btn-primary mt-5 mb-5" >start learning</button></a>
 
               </p>
             <p class="card-text"><small class="text-muted"></small></p>

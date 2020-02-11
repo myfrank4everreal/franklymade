@@ -5,20 +5,36 @@
 {% block content %}
 <!-- the blogs -->
 <div class="container">
+  
+    <h1 class="mt-4 mb-8 text-center">FranklyMade Blog
+      <small></small>
+      </h1>
+      <h5> </h5>
+      <h5></h5>
+    
+      <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+          <a href="#">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Latest Tech News</li>
+      </ol>
+    
+    
 
     <div class="row">
 
       <!-- Blog Entries Column -->
       <div class="col-md-8">
 
-        <h1 class="my-4">FranklyMade.
+        <!-- <h1 class="my-4">FranklyMade.
           <small style="padding:0px; margin:-12px;">tech</small>
-        </h1>
+        </h1> -->
 
         <!-- Blog Post -->
+
     {% for article_item in article_list %}
       
-        <div class="card mb-4">
+        <div class="card mb-6 mt-4">
           <img class="card-img-top" src="{{ article_item.postimage.url }}" alt="Card image cap">
           <div class="card-body">
             <h2 class="card-title">{{ article_item.title }}</h2>

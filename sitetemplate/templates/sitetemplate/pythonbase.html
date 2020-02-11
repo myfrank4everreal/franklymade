@@ -38,7 +38,7 @@
             <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-link" href="{% url 'portinfo' %}">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -112,7 +112,6 @@
                 <a href="{% url 'courses' 6  %}" class="list-group-item list-group-item-action list-group-item-info">For Loops</a>
                 <a href="{% url 'courses' 7  %}" class="list-group-item list-group-item-action list-group-item-light">While Loops</a>
                 <a href="{% url 'courses' 8  %}" class="list-group-item list-group-item-action list-group-item-dark">List and Tuples</a>
-                <a href="{% url 'courses' 9  %}" class="list-group-item list-group-item-action list-group-item-primary">Iterations by Item </a>
                 <a href="{% url 'courses' 10  %}" class="list-group-item list-group-item-action list-group-item-secondary">String methods</a>
                 <a href="{% url 'courses' 11  %}" class="list-group-item list-group-item-action list-group-item-danger">Slice Operator</a>
                 <a href="{% url 'courses' 12  %}" class="list-group-item list-group-item-action list-group-item-warning">Functions</a>

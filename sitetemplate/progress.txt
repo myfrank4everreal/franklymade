@@ -1,4 +1,4 @@
-
+base.html holds the  franklymade home
 VERY IMPORTANT NOTE:
 make sure that you refrence the context variable not 
 the variable in the forloop  when working on

@@ -31,4 +31,6 @@ def services(request):
 
 
 
-
+def about_blog(request):
+    context = {}
+    return render(request, 'blog/about_blog.html', context)

@@ -21,6 +21,8 @@
   <!-- Custom styles for this template -->
   <link href="{% static 'blog/css/blog-home.css' %}" rel="stylesheet">
   <link href="{% static 'css/blogstyle.css' %}" rel="stylesheet">
+  <link href="{% static 'sitetemplate/css/blogstyle.css' %}" rel="stylesheet"> 
+
 
   <!-- <link href="{% static 'images' %}" rel="stylesheet"> -->
 
@@ -38,22 +40,17 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" href="/blog/">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="{% url 'about_blog' %}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="{% url 'python_intro' %}"><small>Learn To Code</small> </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tutorials</a>
-          </li>
+         
         </ul>
       </div>
     </div>
@@ -64,30 +61,37 @@
 
  <!-- this is going to be the page showcase image -->
  
+        <!-- Page Heading/Breadcrumbs -->
+<!-- <div class="container">
+<h1 class="mt-4 mb-8 text-center">FranklyMade Blog
+  <small></small>
+  </h1>
+  <h5> </h5>
+  <h5></h5>
 
- 
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+      <a href="#">Home</a>
+  </li>
+  <li class="breadcrumb-item active">Latest Tech News</li>
+  </ol>
+
+</div> -->
  {% block content %}
  {% endblock %}
  <!-- ***************************************** -->
-
+         
  
         <!-- Pagination -->
-        <ul class="pagination justify-content-center mb-4">
-          <li class="page-item">
-            <a class="page-link" href="#">&larr; Older</a>
-          </li>
-          <li class="page-item disabled">
-            <a class="page-link" href="#">Newer &rarr;</a>
-          </li>
-        </ul>
+        
 
       </div>
 
       <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
+      <div class="col-md-4 ">
 
         <!-- Search Widget -->
-        <div class="card my-4">
+        <!-- <div class="card my-4">
           <h5 class="card-header">Search</h5>
           <div class="card-body">
             <div class="input-group">
@@ -97,11 +101,11 @@
               </span>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Tutorials</h5>
+        <div class="card my-4 mt-8">
+          <h5 class="card-header">Learn To Code</h5>
           <div class="card-body">
             <div class="row">
               <div class="col-lg-6">
@@ -133,12 +137,12 @@
         </div>
 
         <!-- Side Widget -->
-        <div class="card my-4">
+        <!-- <div class="card my-4">
           <h5 class="card-header">Inspirational Quotes</h5>
           <div class="card-body">
-            Get a daily doose of inpirational quote that will inpire you to greatness
+            Get a daily dose of inpirational quote that will inpire you to greatness
           </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -151,7 +155,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; franklymade.tech</p>
     </div>
     <!-- /.container -->
   </footer>
