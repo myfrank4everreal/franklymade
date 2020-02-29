@@ -1,0 +1,88 @@
+{% extends 'portfoliobase.html' %}
+
+{% load static %}
+
+{% block content %}
+  <!-- Portfolio Django projects-->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h2 class="text-secondary mb-5">Recent Projects</h2>
+        <h3 class="mb-8">Python and Django Web Dev. Projects</h3>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 portfolio-item">
+          <!-- <a class="portfolio-item" href="http://lapimade.tech"> -->
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            
+            <span class="caption">
+              <span class="caption-content">
+                <h2>lapimade.tech</h2>
+                <p class="mb-0">An amazon affiliate website</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="{% static 'portinfo/img/portfolio-1.jpg' %}" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6 portfolio-item">
+          <!-- <a class="" href="#portfolio-item"> -->
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>calculate.it</h2>
+                <p class="mb-0"> A website that houses different types of calculators </p>
+              </span>
+            </span>
+            <img class="img-fluid" src="{% static 'portinfo/img/portfolio-2.jpg' %}" alt="">
+          </a>
+        </div>
+       
+        
+       
+    </div>
+  </section>
+  
+
+  
+  <!-- Portfolio python programming projects -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <!-- <h3 class="text-secondary mb-0">Python Projects</h3> -->
+        <h3 class="mb-2">Python Projects</h3>
+
+      </div>
+      <div class="row no-gutters">
+        
+      
+        <div class="col-lg-6 portfolio-item">
+          <!-- <a class="portfolio-item" href="#"> -->
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Web crawler app</h2>
+                <p class="mb-0">A python application that seemlessly crawls the web for a specific type of data</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="{% static 'portinfo/img/portfolio-3.jpg' %}" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6 portfolio-item">
+          <!-- <a class="portfolio-item" href="#"> -->
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Airling Booking And Hotel Reservation </h2>
+                <p class="mb-0">This app provides its user the convinience of booking a flight and requesting hotel reservation in any part of the world</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="{% static 'portinfo/img/portfolio-4.jpg' %}" alt="">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  {% endblock %}

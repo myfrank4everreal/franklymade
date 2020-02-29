@@ -64,14 +64,14 @@
       <div style="background: #f8f8f8; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
         <pre style="margin: 0; border: 0px; line-height: 125%;">
         <span style="color: #8f5902; font-style: italic;"># we want the user to be able to type any variation of tim and be told that they are correct</span>
-        <span style="color: #8f5902; font-style: italic;"># if we don't convert everything into lower cases that means if the user types "Tim"</span>
+        <span style="color: #8f5902; font-style: italic;"># if we don't convert everything into lower cases that means if the user types "Frank"</span>
         <span style="color: #8f5902; font-style: italic;"># they'll be told that they got it wrong</span>
-        <span style="color: #8f5902; font-style: italic;"># same goes for spaces, if the user clicks space before or after they type "tim"</span>
+        <span style="color: #8f5902; font-style: italic;"># same goes for spaces, if the user clicks space before or after they type "frank"</span>
         <span style="color: #8f5902; font-style: italic;"># we still want to tell them they got the correct answer</span>
         
         <span style="color: #000000;">answer</span> <span style="color: #ce5c00; font-weight: bold;">=</span> <span style="color: #204a87;">input</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #4e9a06;">"What is my name? "</span><span style="color: #000000; font-weight: bold;">)</span>
         
-        <span style="color: #204a87; font-weight: bold;">if</span> <span style="color: #000000;">answer</span><span style="color: #ce5c00; font-weight: bold;">.</span><span style="color: #000000;">lower</span><span style="color: #000000; font-weight: bold;">()</span><span style="color: #ce5c00; font-weight: bold;">.</span><span style="color: #000000;">strip</span><span style="color: #000000; font-weight: bold;">()</span> <span style="color: #ce5c00; font-weight: bold;">==</span> <span style="color: #4e9a06;">"tim"</span><span style="color: #000000; font-weight: bold;">:</span>
+        <span style="color: #204a87; font-weight: bold;">if</span> <span style="color: #000000;">answer</span><span style="color: #ce5c00; font-weight: bold;">.</span><span style="color: #000000;">lower</span><span style="color: #000000; font-weight: bold;">()</span><span style="color: #ce5c00; font-weight: bold;">.</span><span style="color: #000000;">strip</span><span style="color: #000000; font-weight: bold;">()</span> <span style="color: #ce5c00; font-weight: bold;">==</span> <span style="color: #4e9a06;">"frank"</span><span style="color: #000000; font-weight: bold;">:</span>
             <span style="color: #204a87; font-weight: bold;">print</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #4e9a06;">"Correct!"</span><span style="color: #000000; font-weight: bold;">)</span>
         <span style="color: #204a87; font-weight: bold;">else</span><span style="color: #000000; font-weight: bold;">:</span>
             <span style="color: #204a87; font-weight: bold;">print</span><span style="color: #000000; font-weight: bold;">(</span><span style="color: #4e9a06;">"That is incorrect!"</span><span style="color: #000000; font-weight: bold;">)</span>

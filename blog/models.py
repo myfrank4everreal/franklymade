@@ -16,5 +16,3 @@ class Article(models.Model):
     def shotend_body(self):
         return self.body[:200] + '...'
    
-
-

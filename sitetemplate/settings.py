@@ -70,6 +70,7 @@ TEMPLATES = [
             os.path.join(BASE_DIR,'sitetemplate/templates'),
             os.path.join(BASE_DIR,'blog/templates/blog'),
             os.path.join(BASE_DIR,'portfolio/templates/portfolio'),
+            os.path.join(BASE_DIR,'portinfo/templates/portinfo'),
                         
         ],
         'APP_DIRS': True,

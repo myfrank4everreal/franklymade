@@ -7,6 +7,7 @@ urlpatterns = [
     path('pythontutorial', views.python_intro, name='python_intro'),
     path('lesson/<int:course_id>', views.python_cours_details, name='courses'),
     path('learnDejango', views.django_intro, name='django_intro' ),
+    path('search', views.searchBar, name='searchitem' ),
 
 
 

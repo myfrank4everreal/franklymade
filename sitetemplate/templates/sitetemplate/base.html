@@ -41,7 +41,7 @@
             <a class="nav-link" href="{% url 'portinfo' %}">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="{% url 'index'%}">Blog</a>
           </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Tutorials</a>
@@ -92,7 +92,7 @@
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search for...">
               <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
+                <a href="{% static url 'searchitem' %}"><button class="btn btn-secondary" type="button">Go!</button></a>
               </span>
             </div>
           </div>
@@ -100,49 +100,19 @@
 
         <!-- Categories Widget -->
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">Learn python</a>
-        
-          
-          <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Basic Concepts In Python </a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Control Structure</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-success">Python Functions</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Python Modules</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Introduction to Functional Programing</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-info">Object Oriented Programming</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-light">understanding Python List And Dictunary</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Python Projects</a>
-        </div><br><hr><br>
-
+          <a href="{% url 'python_intro' %}" class="list-group-item list-group-item-action">Learn python</a>
+        </div>
+         
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">Learn django</a>
+          <a href="{% url 'django_intro' %}" class="list-group-item list-group-item-action">Learn django</a>
         
-          
-          <a href="#" class="list-group-item list-group-item-action list-group-item-primary">setup a virtual environment for django</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Create a django project</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-success">Create a django app</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-danger">setup and understand urls</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Write some view functions</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-info">Working with a database</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-light">Create some models</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Making migrations to the database</a>
-
-
-        <!-- this is the collapse for the side bar list items -->
-          <p>
-            <a class="btn btn-secondary text-center mt-4 list-group-item " data-toggle="collapse" href="#collapsedjango" role="button" aria-expanded="false" aria-controls="collapsedjango">
-              View More
-            </a>              
-           <div class="collapse" id="collapsedjango">
-          <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Write more views</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">create templates</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-success">How to raise 404 Error</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-danger">The importance and how to use namespaces</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Handling the static files</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-info">Django Projects</a>
-          </div>
         </div>
 
-
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">Databases</a>
+        
+        </div>
+        <br><br><br>
 
           
 

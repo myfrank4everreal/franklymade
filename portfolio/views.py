@@ -10,6 +10,22 @@ def franklymade_home(request):
     context = {}
     return render(request, 'sitetemplate/base.html', context)
 
+# for the search bar
+# i still need to work on this function for it to be able to find the required keyword
+def searchBar(request):
+    keyword_list = ['python', 'django', 'javascript'] 
+    if keyword_list.Find['python']:
+
+        return render(request, 'portfolio/python_intro.html', context)
+    elif keyword_list.Find['django']:
+        return render(request, 'sitetemplate/djangobase.html', context)
+    else:
+        return render(request, 'sitetemplate/base.html', context)
+
+
+            
+
+
 
 
 
