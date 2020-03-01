@@ -5,10 +5,7 @@ class PythonTutorial(models.Model):
     pupdate = models.DateTimeField(auto_now_add=True)
     description = models.TextField(max_length=3000, blank=True, null=True)
     
-
-
-
-
-
+    
+    
     def __str__(self):
         return self.title

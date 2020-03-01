@@ -20,11 +20,13 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
+    path('', include('portfolio.urls')),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
-    path('', include('portfolio.urls')),
+    
     path('myapp/', include('myapp.urls')),
     path('portfolio/', include('portinfo.urls')),
+    
     
 ]
 
