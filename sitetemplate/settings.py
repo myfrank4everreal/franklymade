@@ -31,7 +31,7 @@ SECRET_KEY = 'z@kz)6fktuzryqa4%iw-_*ky4=!jx^t=aifj=pjx&a)*fb$&i)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['mysterious-temple-30222.herokuapp.com']
+ALLOWED_HOSTS = ['mysterious-temple-30222.herokuapp.com', 'www.franklymade.net']
 
 
 # Application definition
@@ -214,6 +214,3 @@ LOGGING = {
 
 # now we need tp use the settings called 'less secured apps' to be  able to 
 # set up our website to be able to send email to us.
-
-# GOOGLE  for django enviromental variable so as to hide your passward 
-# when you push the code to github its veery simple.
