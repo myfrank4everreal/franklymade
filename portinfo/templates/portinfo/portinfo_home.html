@@ -64,7 +64,7 @@
     <ul class="sidebar-nav">
       
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
+        <a class="js-scroll-trigger" href="/">Home</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#about">About</a>
@@ -88,7 +88,7 @@
       <h3 class="mb-5">
         <em>Hi, my name is Franklin, a python and Django Web developer </em>
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Contact Me</a>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="{% url 'contact' %}">Contact Me</a>
     </div>
     <div class="overlay"></div>
   </header>
@@ -130,7 +130,7 @@
         
        
     </div>
-    <a href="{% url 'projects' %}"><button class="btn btn-primary text-center  container">View All </button></a>
+    <!-- <a href="{% url 'projects' %}"><button class="btn btn-primary text-center  container">View All </button></a> -->
   </section>
   
 
@@ -174,7 +174,7 @@
         </div>
 
       </div>
-    <a href="{% url 'projects' %}"><button class="btn btn-primary text-center  container">View All </button></a>
+    <!-- <a href="{% url 'projects' %}"><button class="btn btn-primary text-center  container">View All </button></a> -->
 
     </div>
 
