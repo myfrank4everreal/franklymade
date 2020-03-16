@@ -31,7 +31,7 @@ SECRET_KEY = 'z@kz)6fktuzryqa4%iw-_*ky4=!jx^t=aifj=pjx&a)*fb$&i)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysterious-temple-30222.herokuapp.com', 'franklymade.net']
+ALLOWED_HOSTS = []
 
 
 # Application definition
