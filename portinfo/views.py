@@ -36,7 +36,7 @@ def contactMe(request):
             message_name,
             message,        
             message_email, 
-            ['franklin.okolie4@gmail.com'],
+            ['frank4everreal@gmail.com']
             )
             
 
