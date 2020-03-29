@@ -172,8 +172,8 @@ EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'frank4everreal@gmail.com'  #this will be your email or that of the client.
 EMAIL_HOST_PASSWORD = 'madu1234'  #this will be your email password or that of the client.
 
-# EMAIL_USE_TLS = True
-EMAIL_USE_TLS = False
+EMAIL_USE_TLS = True
+# EMAIL_USE_TLS = False
 
 # now we need tp use the settings called 'less secured apps' to be  able to 
 # set up our website to be able to send email to us.
