@@ -57,60 +57,60 @@ def python_cours_details(request, course_id):
         #     return redirect('python_intro')
 
             
-        if course.id == 1:
+        if course.id == 27:
             context = {'course':course}
             return render(request, 'portfolio/variable_and_datatype.html', context)
-        elif course_id == 2:
+        elif course_id == 28:
             context = {'course':course}
             return render(request, 'portfolio/operators_and_input.html', context)
-        elif course_id == 3:
+        elif course_id == 29:
             context = {'course':course}
             return render(request, 'portfolio/conditions.html', context)
-        elif course_id == 4:
+        elif course_id == 30:
             context = {'course':course}
             return render(request, 'portfolio/if_else.html', context)
-        elif course_id == 5:
+        elif course_id == 31:
             context = {'course':course}
             return render(request, 'portfolio/nested_statements.html', context)
-        elif course_id == 6:
+        elif course_id == 32:
             context = {'course':course}
             return render(request, 'portfolio/forloops.html', context)
-        elif course_id == 7:
+        elif course_id == 33:
             context = {'course':course}
             return render(request, 'portfolio/whileloops.html', context)
-        elif course_id == 8:
+        elif course_id == 34:
             context = {'course':course}
             return render(request, 'portfolio/listandtuple.html', context)
     
 
-        elif course_id == 10:
+        elif course_id == 35:
             context = {'course':course}
             return render(request, 'portfolio/string_method.html', context)
-        elif course_id == 11:
+        elif course_id == 36:
             context = {'course':course}
             return render(request, 'portfolio/slice_operator.html', context)
-        elif course_id == 12:
+        elif course_id == 37:
             context = {'course':course}
             return render(request, 'portfolio/functions.html', context)
-        elif course_id == 13:
+        elif course_id == 38:
             context = {'course':course}
             return render(request, 'portfolio/reading_files.html', context)
-        elif course_id == 14:
+        elif course_id == 39:
             context = {'course':course}
             return render(request, 'portfolio/writing_files.html', context)
-        elif course_id == 15:
+        elif course_id == 40:
             context = {'course':course}
             return render(request, 'portfolio/listmethod.html', context)
-        elif course_id == 16:
+        elif course_id == 41:
             context = {'course':course}
             return render(request, 'portfolio/modular_programing.html', context)
-        elif course_id == 17:
+        elif course_id == 42:
             context = {'course':course}
             return render(request, 'portfolio/error_handling.html', context)
-        elif course_id == 18:
+        elif course_id == 43:
             context = {'course':course}
             return render(request, 'portfolio/global_vs_local.html', context)
-        elif course_id == 19:
+        elif course_id == 44:
             context = {'course':course}
             return render(request, 'portfolio/classes_and_objects.html', context)
         # else:
