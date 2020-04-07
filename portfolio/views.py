@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-# from .models import PythonTutorial
+from .models import PythonTutorial
 from django.http import Http404
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponseRedirect
