@@ -34,8 +34,8 @@ def contactMe(request):
 
         send_mail(
             message_email,
-            messagebody + ' \n client name: ' + message_name + ' \n client phone: ' + message_phone + ' \n client phone: ' + message_email,
-            messagebody[0:40] + '...',
+            message + ' \n client name: ' + message_name + ' \n client phone: ' + message_phone + ' \n client Email: ' + message_email,
+            message[0:40] + '...',
             ['inspiredburdsinfo@gmail.com']
             )
             
