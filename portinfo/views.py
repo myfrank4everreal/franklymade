@@ -33,10 +33,10 @@ def contactMe(request):
         # import the send_mail from django.core.mail
 
         send_mail(
-            message_name,
-            message,        
-            message_email, 
-            ['frank4everreal@gmail.com']
+            message_email,
+            messagebody + ' \n client name: ' + message_name + ' \n client phone: ' + message_phone + ' \n client phone: ' + message_email,
+            messagebody[0:40] + '...',
+            ['inspiredburdsinfo@gmail.com']
             )
             
 
