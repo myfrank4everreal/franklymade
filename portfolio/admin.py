@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import PythonTutorial
+from .models import PythonCourse
 
 
-admin.site.register(PythonTutorial)
+admin.site.register(PythonCourse)

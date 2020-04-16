@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import PythonTutorial
+from .models import PythonCourse
 from django.http import Http404
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponseRedirect
@@ -38,7 +38,7 @@ def python_intro(request):
 
 def python_cours_details(request, course_id):
     try:
-        course = PythonTutorial.objects.get(pk=course_id)
+        course = PythonCourse.objects.get(pk=course_id)
        
        
     except:
@@ -81,38 +81,39 @@ def python_cours_details(request, course_id):
         elif course_id == 8:
             context = {'course':course}
             return render(request, 'portfolio/listandtuple.html', context)
+        elif course_id == 9:
+            context = {'course':course}
+            return render(request, 'portfolio/string_method.html', context)
     
 
         elif course_id == 10:
             context = {'course':course}
-            return render(request, 'portfolio/string_method.html', context)
+            return render(request, 'portfolio/slice_operator.html', context)
         elif course_id == 11:
             context = {'course':course}
-            return render(request, 'portfolio/slice_operator.html', context)
+            return render(request, 'portfolio/functions.html', context)
         elif course_id == 12:
             context = {'course':course}
-            return render(request, 'portfolio/functions.html', context)
+            return render(request, 'portfolio/reading_files.html', context)
         elif course_id == 13:
             context = {'course':course}
-            return render(request, 'portfolio/reading_files.html', context)
+            return render(request, 'portfolio/writing_files.html', context)
         elif course_id == 14:
             context = {'course':course}
-            return render(request, 'portfolio/writing_files.html', context)
+            return render(request, 'portfolio/listmethod.html', context)
         elif course_id == 15:
             context = {'course':course}
-            return render(request, 'portfolio/listmethod.html', context)
+            return render(request, 'portfolio/modular_programing.html', context)
         elif course_id == 16:
             context = {'course':course}
-            return render(request, 'portfolio/modular_programing.html', context)
+            return render(request, 'portfolio/error_handling.html', context)
         elif course_id == 17:
             context = {'course':course}
-            return render(request, 'portfolio/error_handling.html', context)
+            return render(request, 'portfolio/global_vs_local.html', context)
         elif course_id == 18:
             context = {'course':course}
-            return render(request, 'portfolio/global_vs_local.html', context)
-        elif course_id == 19:
-            context = {'course':course}
             return render(request, 'portfolio/classes_and_objects.html', context)
+  
         # else:
             # return HttpResponseRedirect(reverse('python_intro', args=(course.id,)))
 
