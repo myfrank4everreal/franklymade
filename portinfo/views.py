@@ -21,34 +21,5 @@ def projectDetails(request):
     return render(request, 'portinfo/projectdetails.html')
     
 
-def contactMe(request):
-    if request.method == "POST":
-        message_name  = request.POST['name']
-        message_email  = request.POST['email']
-        message = request.POST['message']
-        message_phone = request.POST['phone']
-        
-
-
-        # import the send_mail from django.core.mail
-
-        send_mail(
-            message_email,
-            message + ' \n client name: ' + message_name + ' \n client phone: ' + message_phone + ' \n client Email: ' + message_email,
-            message[0:0] + '...',
-            ['inspiredburdsinfo@gmail.com']
-            )
-            
-
-       
-
-
-
-        return render(request, 'portinfo/contact.html', {'message_name':message_name})
-    else:
-        return render(request, 'portinfo/contact.html', {})
-
-
-    
     
 
