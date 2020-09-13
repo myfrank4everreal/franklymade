@@ -20,61 +20,34 @@
       </ol>
     
     
-<!-- Page Content -->
-<div class="container">
 
-  <!-- Page Heading -->
-  <h1 class="my-4">Page Heading
-    <small>Secondary Text</small>
-  </h1>
-  <div class="row">
-{% for article_item in article_list %}
+    <div class="row">
 
-    <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="{{ article_item.postimage.url }}" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">{{ article_item.title }}</a>
-          </h4>
-          <p class="card-text">{{ article_item.shotend_body }}</p>
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+
+        <!-- <h1 class="my-4">FranklyMade.
+          <small style="padding:0px; margin:-12px;">tech</small>
+        </h1> -->
+
+        <!-- Blog Post -->
+
+    {% for article_item in article_list %}
+      
+        <div class="card mb-6 mt-4">
+          <img class="card-img-top" src="{{ article_item.postimage.url }}" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title">{{ article_item.title }}</h2>
+            <p class="card-text">{{ article_item.shotend_body }}</p>
+            <a href="{% url 'myarticle' article_item.id %}" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+          <div class="card-footer text-muted">
+            Posted <!-- on {{ article_item.postdate }}--> by 
+            <a href="#">FranklyMade</a>
+          </div>
         </div>
-      </div>
-    </div>
-
-  {% endfor %}
-
-  </div>
-  
-  <!-- /.row -->
-
-  <!-- Pagination -->
-  <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">1</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">2</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">3</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-    </li>
-  </ul>
-
-</div>
-<!-- /.container -->
+        
+    {% endfor %}
     
        
         {% endblock %}
